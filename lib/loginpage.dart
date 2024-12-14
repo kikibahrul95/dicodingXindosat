@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:presensi_1/homepage.dart';
 
-class LoginPage extends StatefulWidget {
+class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
-  @override
-  State<LoginPage> createState() => _LoginPageState();
-}
-
-class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,16 +15,17 @@ class _LoginPageState extends State<LoginPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Center( 
+              Center(
                 child: Container(
                   height: 200,
                   width: 200,
                   decoration: BoxDecoration(
-                    // border: Border.all(color: Colors.black,width: 5),
-                    // borderRadius: BorderRadius.circular(100)
-                  ),
-                  child: Image(image: AssetImage("images/Logors1.png"),
-                  fit: BoxFit.contain,
+                      // border: Border.all(color: Colors.black,width: 5),
+                      // borderRadius: BorderRadius.circular(100)
+                      ),
+                  child: Image(
+                    image: AssetImage("images/Logors1.png"),
+                    fit: BoxFit.contain,
                   ),
                 ),
               ),
@@ -46,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
                 child: TextField(
                   //controller: emailController,
                   decoration: InputDecoration(
-                    icon: Icon(Icons.mail),
+                      icon: Icon(Icons.mail),
                       border: InputBorder.none,
 
                       /// hintStyle: greyFontStyle,
@@ -93,8 +89,10 @@ class _LoginPageState extends State<LoginPage> {
                             MaterialPageRoute(
                                 builder: (context) => HomePage()));
                       },
-                      child: Text("Login", style: TextStyle(fontSize: 30,color: Colors.white70),)
-                      ))
+                      child: Text(
+                        "Login",
+                        style: TextStyle(fontSize: 30, color: Colors.white70),
+                      )))
             ],
           ),
         ),
