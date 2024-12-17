@@ -159,36 +159,10 @@ class _HomePageState extends State<HomePage> {
               SizedBox(
                 height: 250,
               ),
-
-              // Center(
-              //   // child: Container(
-              //   //   height: 70,
-              //   //   child: ElevatedButton(
-              //   //     style: ElevatedButton.styleFrom(
-
-              //   //       backgroundColor: Colors.blueAccent
-              //   //     ),
-
-              //   //     onPressed: (){}, child:Text("Ambil Absen",style: TextStyle(fontSize: 30,color: Colors.white),) ),
-
-              //   // ),
-              // )
             ],
           ),
         ),
       )),
-      // floatingActionButton: Container(
-      //   height: 65,
-      //   color: Colors.blueAccent,
-      //   ///width: MediaQuery.of(context).size.width -(2*12),
-      //   ///margin: EdgeInsets.symmetric(horizontal: 12),
-      //   decoration: BoxDecoration(
-      //     color: Colors.cyan,borderRadius: BorderRadius.circular(23)
-      //   ),
-
-      //   ),
-
-      //body: Container(color: Colors.blueAccent),
     );
   }
 }
